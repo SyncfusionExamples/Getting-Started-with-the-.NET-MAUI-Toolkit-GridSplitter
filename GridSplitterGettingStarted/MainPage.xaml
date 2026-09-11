@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GridSplitterGettingStarted.MainPage"
+             xmlns:gridSplitter="clr-namespace:Syncfusion.Maui.Toolkit.GridSplitter;assembly=Syncfusion.Maui.Toolkit">
+
+    <gridSplitter:SfGridSplitter >
+
+        <!-- User List Pane -->
+        <gridSplitter:SplitterPane>
+            <VerticalStackLayout Padding="16" Spacing="10">
+
+                <Label Text="Users"
+                   FontSize="20"
+                   FontAttributes="Bold" />
+
+                <Label Text="👤 Katherine Joe" />
+                <Label Text="👤 John Smith" />
+                <Label Text="👤 Emma Wilson" />
+                <Label Text="👤 David Brown" />
+                <Label Text="👤 Sophia Johnson" />
+
+            </VerticalStackLayout>
+        </gridSplitter:SplitterPane>
+
+        <!-- Profile Details Pane -->
+        <gridSplitter:SplitterPane>
+            <VerticalStackLayout Padding="16" Spacing="10">
+
+                <Label Text="Profile Details"
+                   FontSize="20"
+                   FontAttributes="Bold" />
+
+                <Label Text="Name" />
+                <Entry Text="Katherine Joe" />
+
+                <Label Text="Email" />
+                <Entry Text="katherine@example.com" />
+
+                <Label Text="Department" />
+                <Entry Text="Engineering" />
+
+                <Label Text="Location" />
+                <Entry Text="Chennai" />
+
+                <Button Text="Save Changes" WidthRequest="150"/>
+
+            </VerticalStackLayout>
+        </gridSplitter:SplitterPane>
+
+        <!-- Activity History Pane -->
+        <gridSplitter:SplitterPane>
+            <VerticalStackLayout Padding="16" Spacing="10">
+
+                <Label Text="Recent Activity"
+                   FontSize="20"
+                   FontAttributes="Bold" />
+
+                <Label Text="• Updated profile information" />
+                <Label Text="• Submitted timesheet" />
+                <Label Text="• Reviewed pull request #145" />
+                <Label Text="• Completed GridSplitter testing" />
+                <Label Text="• Logged in from mobile device" />
+
+            </VerticalStackLayout>
+        </gridSplitter:SplitterPane>
+
+    </gridSplitter:SfGridSplitter>
+    
+</ContentPage>
